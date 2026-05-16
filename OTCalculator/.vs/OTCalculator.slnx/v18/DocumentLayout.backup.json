@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\yokohama-learning-journey\\OTCalculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A0C3D6-8190-E56B-F9EA-BD7F532F50DD}|OTCalculator\\OTCalculator.csproj|d:\\yokohama-learning-journey\\otcalculator\\otcalculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A0C3D6-8190-E56B-F9EA-BD7F532F50DD}|OTCalculator\\OTCalculator.csproj|solutionrelative:otcalculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\yokohama-learning-journey\\OTCalculator\\OTCalculator\\Program.cs",
+              "RelativeDocumentMoniker": "OTCalculator\\Program.cs",
+              "ToolTip": "D:\\yokohama-learning-journey\\OTCalculator\\OTCalculator\\Program.cs",
+              "RelativeToolTip": "OTCalculator\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T04:49:35.775Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
