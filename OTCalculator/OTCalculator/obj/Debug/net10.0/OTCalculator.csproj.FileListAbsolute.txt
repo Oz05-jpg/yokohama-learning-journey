@@ -12,3 +12,4 @@ D:\yokohama-learning-journey\OTCalculator\OTCalculator\obj\Debug\net10.0\refint\
 D:\yokohama-learning-journey\OTCalculator\OTCalculator\obj\Debug\net10.0\OTCalculator.pdb
 D:\yokohama-learning-journey\OTCalculator\OTCalculator\obj\Debug\net10.0\OTCalculator.genruntimeconfig.cache
 D:\yokohama-learning-journey\OTCalculator\OTCalculator\obj\Debug\net10.0\ref\OTCalculator.dll
+D:\yokohama-learning-journey\OTCalculator\OTCalculator\obj\Debug\net10.0\OTCalculator.sourcelink.json
