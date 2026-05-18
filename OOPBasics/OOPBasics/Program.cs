@@ -19,6 +19,9 @@
                 Console.WriteLine("-------------------------");
             }
 
+            Manager mgr1 = new Manager("จ๊อบ", 50, 1000, 5000);
+            Console.WriteLine($"ชื่อผู้จัดการ: {mgr1.Name}");
+            Console.WriteLine($"เงินเดือน + โบนัส: {mgr1.CalculateTotalPayWithBonus():N2} บาท");
         }
     }
 }

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\yokohama-learning-journey\\OOPBasics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1B770E6-0D41-426C-B1A8-8DAF68FFBBD2}|OOPBasics\\OOPBasics.csproj|d:\\yokohama-learning-journey\\oopbasics\\oopbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1B770E6-0D41-426C-B1A8-8DAF68FFBBD2}|OOPBasics\\OOPBasics.csproj|solutionrelative:oopbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ADE13A2-A4F7-1A28-8E4C-217F3F599B5F}|OOPBasics\\OOPBasics.csproj|d:\\yokohama-learning-journey\\oopbasics\\oopbasics\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADE13A2-A4F7-1A28-8E4C-217F3F599B5F}|OOPBasics\\OOPBasics.csproj|solutionrelative:oopbasics\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1B770E6-0D41-426C-B1A8-8DAF68FFBBD2}|OOPBasics\\OOPBasics.csproj|d:\\yokohama-learning-journey\\oopbasics\\oopbasics\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1B770E6-0D41-426C-B1A8-8DAF68FFBBD2}|OOPBasics\\OOPBasics.csproj|solutionrelative:oopbasics\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ADE13A2-A4F7-1A28-8E4C-217F3F599B5F}|OOPBasics\\OOPBasics.csproj|d:\\yokohama-learning-journey\\oopbasics\\oopbasics\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADE13A2-A4F7-1A28-8E4C-217F3F599B5F}|OOPBasics\\OOPBasics.csproj|solutionrelative:oopbasics\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADE13A2-A4F7-1A28-8E4C-217F3F599B5F}|OOPBasics\\OOPBasics.csproj|d:\\yokohama-learning-journey\\oopbasics\\oopbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADE13A2-A4F7-1A28-8E4C-217F3F599B5F}|OOPBasics\\OOPBasics.csproj|solutionrelative:oopbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "D:\\yokohama-learning-journey\\OOPBasics\\OOPBasics\\Manager.cs",
+              "RelativeDocumentMoniker": "OOPBasics\\Manager.cs",
+              "ToolTip": "D:\\yokohama-learning-journey\\OOPBasics\\OOPBasics\\Manager.cs",
+              "RelativeToolTip": "OOPBasics\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T12:03:13.784Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,20 +45,20 @@
               "RelativeDocumentMoniker": "OOPBasics\\Employee.cs",
               "ToolTip": "D:\\yokohama-learning-journey\\OOPBasics\\OOPBasics\\Employee.cs",
               "RelativeToolTip": "OOPBasics\\Employee.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswA4AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T11:07:28.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\yokohama-learning-journey\\OOPBasics\\OOPBasics\\Program.cs",
               "RelativeDocumentMoniker": "OOPBasics\\Program.cs",
               "ToolTip": "D:\\yokohama-learning-journey\\OOPBasics\\OOPBasics\\Program.cs",
               "RelativeToolTip": "OOPBasics\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T11:05:51.856Z",
               "EditorCaption": ""
