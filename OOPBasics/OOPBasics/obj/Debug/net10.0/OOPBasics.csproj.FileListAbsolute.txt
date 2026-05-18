@@ -1,0 +1,15 @@
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\bin\Debug\net10.0\OOPBasics.exe
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\bin\Debug\net10.0\OOPBasics.deps.json
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\bin\Debug\net10.0\OOPBasics.runtimeconfig.json
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\bin\Debug\net10.0\OOPBasics.dll
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\bin\Debug\net10.0\OOPBasics.pdb
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\OOPBasics.GeneratedMSBuildEditorConfig.editorconfig
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\OOPBasics.AssemblyInfoInputs.cache
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\OOPBasics.AssemblyInfo.cs
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\OOPBasics.csproj.CoreCompileInputs.cache
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\OOPBasics.sourcelink.json
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\OOPBasics.dll
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\refint\OOPBasics.dll
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\OOPBasics.pdb
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\OOPBasics.genruntimeconfig.cache
+D:\yokohama-learning-journey\OOPBasics\OOPBasics\obj\Debug\net10.0\ref\OOPBasics.dll
