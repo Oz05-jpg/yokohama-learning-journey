@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOPBasics
 {
-    class Employee
+    class Employee : IPayable //คลาสพนักงานที่สืบทอดมาจาก interface IPayable
     {
         //Properties - ข้อมูลของพนักงาน
         public string Name;

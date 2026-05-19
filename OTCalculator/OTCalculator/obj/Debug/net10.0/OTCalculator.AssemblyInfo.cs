@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OTCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18af46563379c89ecc691f193daeba01262c4374")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddb89c9bcb4e65f2ded54b1b2246f48900991b43")]
 [assembly: System.Reflection.AssemblyProductAttribute("OTCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OTCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
