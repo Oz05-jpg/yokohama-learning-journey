@@ -23,7 +23,7 @@ namespace OOPBasics
         public double CalculateTotalPay()//ฟังก์ชันคำนวณเงินเดือนของพนักงาน
         {
             int normalHours = 40;//กำหนดชั่วโมงการทำงานปกติ
-            double actualHours = Math.Min(HoursWorked,normalHours);//เก็บค่าชั่วโมงการทำงานจริงของพนักงาน
+            double actualHours = Math.Min(HoursWorked, normalHours);//เก็บค่าชั่วโมงการทำงานจริงของพนักงาน
             double baseSalary = actualHours * HourlyRate;//คำนวณเงินเดือนพื้นฐานโดยการคูณชั่วโมงการทำงานจริงกับอัตราค่าจ้างต่อชั่วโมง
             double otPay = 0;//กำหนดค่าเงินค่าล่วงเวลาเริ่มต้นเป็น 0
 
@@ -33,8 +33,16 @@ namespace OOPBasics
                 int otHours = HoursWorked - normalHours;//คำนวณชั่วโมงการทำงานล่วงเวลาของพนักงาน
                 otPay = otHours * HourlyRate * 1.5;//คำนวณเงินค่าล่วงเวลาโดยการคูณชั่วโมงการทำงานล่วงเวลากับอัตราค่าจ้างต่อชั่วโมงและคูณด้วย 1.5
             }
-            
+
             return baseSalary + otPay;//คืนค่าเงินเดือนรวมของพนักงานโดยการบวกเงินเดือนพื้นฐานกับเงินค่าล่วงเวลา
+        }
+
+        //method GetOTHours - ฟังก์ชันคำนวณชั่วโมงการทำงานล่วงเวลาของพนักงาน
+        public int GetOTHours()
+        {
+            int normalHours = 40;//กำหนดชั่วโมงการทำงานปกติ
+            if (HoursWorked <= normalHours) return 0;//ถ้าชั่วโมงการทำงานไม่เกินชั่วโมงปกติให้คืนค่า 0
+            return HoursWorked - normalHours;//ชั่วโมงทำงานรวม - ชั่วโมงปกติ = ชั่วโมงการทำงานล่วงเวลา
         }
     }
 }
