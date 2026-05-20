@@ -38,8 +38,7 @@
               "RelativeToolTip": "EmployeeManagement\\Manager.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAACmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T10:59:25.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T10:59:25.969Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "EmployeeManagement\\Employee.cs",
               "ToolTip": "D:\\yokohama-learning-journey\\EmployeeManagement\\EmployeeManagement\\Employee.cs",
               "RelativeToolTip": "EmployeeManagement\\Employee.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA3wA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA8wA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T10:59:21.108Z",
               "EditorCaption": ""
@@ -73,9 +72,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\yokohama-learning-journey\\EmployeeManagement\\EmployeeManagement\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeManagement\\Program.cs",
-              "ToolTip": "D:\\yokohama-learning-journey\\EmployeeManagement\\EmployeeManagement\\Program.cs",
-              "RelativeToolTip": "EmployeeManagement\\Program.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\yokohama-learning-journey\\EmployeeManagement\\EmployeeManagement\\Program.cs*",
+              "RelativeToolTip": "EmployeeManagement\\Program.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAwDEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T10:59:00.809Z",
               "EditorCaption": ""
