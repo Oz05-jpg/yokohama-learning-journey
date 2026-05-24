@@ -1,61 +1,80 @@
-﻿//เก็บขัอมูลพนักงาน
+﻿var repo = new OTRepo();
+
+//รับข้อมูลจากผู้ใช้
 List<string> employeename = new List<string>();
 List<int> hoursWorked = new List<int>();
 List<double> hourlyRate = new List<double>();
 
-//ตัวแปรสำหรับควบคุมการเพิ่มพนักงาน
 string choice = "y";
-
-//วนลูปเพื่อรับข้อมูลพนักงานจนกว่าผู้ใช้จะเลือกไม่เพิ่มพนักงานอีก
-while (choice == "y")
+//วนลูปรับข้อมูลพนักงานจนกว่าจะเลือกไม่เพิ่มอีก
+while (choice.ToLower() == "y")
 {
-    //รับข้อมูลพนักงาน
-    Console.WriteLine($"ชื่อพนักงาน:");
+    Console.Write($"ชื่อพนักงาน: ");
     string name = Console.ReadLine();
-
-    Console.WriteLine($"ชั่วโมงที่ทำงาน:");
+    Console.Write($"ชั่วโมงที่ทำงาน:");
     int hours = int.Parse(Console.ReadLine());
+    Console.Write($"ราคาต่อชั่วโมง:");
+    double rate = double.Parse(Console.ReadLine());
 
-    Console.WriteLine($"ราคาต่อชั่วโมง:");
-    double rate = double.Parse(Console.ReadLine());//parse คือการแปลงข้อมูลจาก string เป็นชนิดข้อมูลที่ต้องการ
-
-    //เพิ่มข้อมูลพนักงานลงใน list
     employeename.Add(name);
     hoursWorked.Add(hours);
     hourlyRate.Add(rate);
 
-    //ถามผู้ใช้ว่าต้องการเพิ่มพนักงานคนต่อไปไหม
-    Console.WriteLine("เพิ่มพนักงานคนต่อไปไหม? (y/n)");
+    Console.Write("เพิ่มพนักงานคนต่อไปไหม? (y/n)");
     choice = Console.ReadLine();
 }
-
-
-//คำนวณค่า OT
-Console.WriteLine("\n ======= สรุปรายการ =======");
-
-// วนลูปเพื่อคำนวณค่า OT สำหรับแต่ละพนักงาน
+//คำนวณเงินเดือนและแสดงผลลัพธ์
+Console.WriteLine("\n ====== สรุปรายการ ======");
 for (int i = 0; i < employeename.Count; i++)
 {
     int normalHours = 40;
-    double actualHours = Math.Min(hoursWorked[i], normalHours);// ชั่วโมงที่ทำงานจริงที่ไม่เกิน 40 ชั่วโมง
-    double basepay = actualHours * hourlyRate[i];// เงินเดือนปกติสำหรับ 40 ชั่วโมงแรก
+    double actualHours = Math.Min(hoursWorked[i], normalHours);
+    double basePay = actualHours * hourlyRate[i];
     double otPay = 0;
-
-    // คำนวณค่า OT ถ้าชั่วโมงที่ทำงานเกิน 40 ชั่วโมง
+    //ถ้าทำงานเกิน 40 ชั่วโมง ให้คำนวณ OT
     if (hoursWorked[i] > normalHours)
     {
         int otHours = hoursWorked[i] - normalHours;
-        otPay = otHours * hourlyRate[i] * 1.5; // OT คิดเป็น 1.5 เท่าของค่าจ้างปกติ
+        otPay = otHours * hourlyRate[i] * 1.5;
     }
-
-    // แสดงผลลัพธ์
-    double totalPay = basepay + otPay;
-
+    //คำนวณเงินเดือนรวม
+    double totalPay = basePay + otPay;
     Console.WriteLine($"พนักงาน: {employeename[i]}");
     Console.WriteLine($"ชั่วโมงที่ทำงาน: {hoursWorked[i]} ชม.");
-    Console.WriteLine($"เงินเดือนปกติ: {basepay:N2}บาท");
-    Console.WriteLine($"เงิน OT: {otPay:N2}บาท");
-    Console.WriteLine($"เงินเดือนรวม: {totalPay:N2}บาท");
+    Console.WriteLine($"เงินเดือนปกติ: {basePay:N2} บาท");
+    Console.WriteLine($"เงิน OT: {otPay:N2} บาท");
+    Console.WriteLine($"เงินเดือนรวม: {totalPay:N2} บาท");
     Console.WriteLine("-----------------------------");
+
+    //บันทึกข้อมูลลง DB
+    try
+    {
+        repo.Save(
+            employeename[i],
+            hoursWorked[i],
+            hourlyRate[i],
+            basePay,
+            otPay,
+            totalPay
+        );
+        Console.WriteLine("บันทึกลง DB สำเร็จ");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error: {ex.Message}");
+    }
+}
+
+//แสดงข้อมูลจาก DB
+Console.WriteLine("\n ====== ประวัติ OT ทั้งหมด ======");
+var history = repo.GetAll();
+
+//วนลูปแสดงข้อมูลแต่ละเรคอร์ดในประวัติ
+foreach ( var record in history)
+{
+    Console.WriteLine(
+        $"{record.RecordedAt:dd/MM/yyyy HH:mm} | " +
+        $"{record.EmployeeName} | รวม: {record.TotalPay:N2} บาท"
+    );
 
 }
