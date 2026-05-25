@@ -1,9 +1,10 @@
-﻿@model YokohamaMVC.Models.Employee
+﻿@model YokohamaEF.Models.Employee
 
 <div class="container mt-4">
-    <h1>เพิ่มพนักงาน</h1>
+    <h1>แก้ไขพนักงาน</h1>
 
-    <form method="post" action="/Home/AddEmployee" class="mt-3" style="max-width: 400px;">
+    <form method="post" action="/Home/Edit" class="mt-3" style="max-width: 400px;">
+        <input asp-for="Id" type="hidden" />
         <div class="mb-3">
             <label class="form-label">ชื่อ</label>
             <input asp-for="Name" class="form-control" />

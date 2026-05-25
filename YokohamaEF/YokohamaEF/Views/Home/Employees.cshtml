@@ -1,0 +1,37 @@
+﻿@model List<YokohamaEF.Models.Employee>
+
+<div class="container mt-4">
+    <h1>รายชื่อพนักงาน</h1>
+    <a href="/Home/Create" class="btn btn-primary mb-3">+ เพิ่มพนักงาน</a>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ชื่อ</th>
+                <th>แผนก</th>
+                <th>ค่าแรง/ชม.</th>
+                <th>ชม.ทำงาน</th>
+                <th>เงินเดือน</th>
+                <th>จัดการ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emp in Model)
+            {
+                <tr>
+                    <td>@emp.Name</td>
+                    <td>@emp.Department</td>
+                    <td>@emp.HourlyRate</td>
+                    <td>@emp.HoursWorked</td>
+                    <td>@emp.Salary</td>
+                    <td>
+                        <a href="/Home/Edit/@emp.Id" class="btn btn-warning btn-sm">แก้ไข</a>
+                        <form method="post" action="/Home/Delete/@emp.Id" style="display:inline">
+                            <button type="submit" class="btn btn-danger btn-sm">ลบ</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

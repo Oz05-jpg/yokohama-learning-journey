@@ -53,16 +53,19 @@ namespace YokohamaMVC.Controllers
             return View(list);
         }
 
-        //แสดงฟอร์มเพิ่มพนักงาน
+        //สร้างฟอร์มเพิ่มพนักงาน
         public IActionResult Create()
         {
             return View();
         }
-
         //รับข้อมูลจากฟอร์มและแสดงผลในหน้า Employees
         [HttpPost]
         public IActionResult AddEmployee(Employee employee)
-        {
+        {   
+            if (!ModelState.IsValid)
+            {
+                return View("Create", employee);
+            }
 
             try
             {
@@ -79,7 +82,6 @@ namespace YokohamaMVC.Controllers
                 cmd.Parameters.AddWithValue("@HourlyRate", employee.HourlyRate);
                 cmd.Parameters.AddWithValue("@HoursWorked", employee.HoursWorked);
                 cmd.Parameters.AddWithValue("@Salary", employee.Salary);
-
                 cmd.ExecuteNonQuery();
 
             }
