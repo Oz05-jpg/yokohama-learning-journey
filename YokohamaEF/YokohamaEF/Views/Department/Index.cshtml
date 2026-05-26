@@ -1,0 +1,22 @@
+﻿@model List<YokohamaEF.Models.Department>
+<div class="container mt-4"
+    <h1>แผนกทั้งหมด</h1>
+    <a href="/Department/Create" class="btn btn-primary mb-3">+ เพิ่มแผนก</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ชื่อแผนก</th>
+                <th>จำนวนพนักงาน</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dept in Model)
+            {
+                <tr>
+                    <td>@dept.Name</td>
+                    <td>@dept.Employees.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

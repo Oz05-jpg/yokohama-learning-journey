@@ -10,6 +10,8 @@ namespace YokohamaEF.Data
             : base(options) { }
 
         public DbSet<Employee> Employees { get; set; }
+        //migrate Db ใหม่เพื่อเก็บ Department
+        public DbSet<Department> Departments { get; set; }
     }
 
     // ✅ เพิ่มตรงนี้

@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using YokohamaEF.Data;
 using YokohamaEF.Models;
@@ -33,13 +35,22 @@ namespace YokohamaEF.Controllers
         //GET : แสดงรายชื่อพนักงานทั้งหมด
        public IActionResult Employees()
         {
-            var employees = _db.Employees.ToList();
+            var employees = _db.Employees
+                .Include(e => e.DepartmentNav)
+                .ToList();
             return View(employees);
         }
 
         // GET: หน้าฟอร์มเพิ่มพนักงาน
         public IActionResult Create()
         {
+            //ส่งรายชื่อแผนกไปให้ View
+            ViewBag.Departments = _db.Departments
+                .Select(d => new SelectListItem
+                {
+                    Value = d.Id.ToString(),
+                    Text = d.Name
+                }).ToList();
             return View();
         }
 

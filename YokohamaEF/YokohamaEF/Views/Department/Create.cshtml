@@ -1,0 +1,20 @@
+﻿@model YokohamaEF.Models.Department
+
+<div class="container mt-4">
+    <h1>เพิ่มแผนก</h1>
+
+    <form method="post" action="/Department/Create" class="mt-3" style="max-width: 400px;">
+        <div class="mb-3">
+            <label class="form-label">ชื่อแผนก</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">บันทึก</button>
+        <a href="/Department/Index" class="btn btn-secondary ms-2">ยกเลิก</a>
+    </form>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
