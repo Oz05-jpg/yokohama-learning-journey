@@ -23,5 +23,8 @@ namespace YokohamaEF.Models
         public int? DepartmentId { get; set; }
         public Department? DepartmentNav { get; set; }
 
+        //Many-to-Many -> Employee หลายคนถือได้หลาย Project
+        public ICollection<Project> Projects { get; set; } = new List<Project>();
+
     }
 }

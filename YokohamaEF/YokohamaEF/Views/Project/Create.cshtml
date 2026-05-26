@@ -1,0 +1,25 @@
+﻿@model YokohamaEF.Models.Project
+
+<div class="container mt-4">
+    <h1>เพิ่ม Project</h1>
+
+    <form method="post" action="/Project/Create" class="mt-3" style="max-width: 400px;">
+        <div class="mb-3">
+            <label class="form-label">ชื่อ Project</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">คำอธิบาย</label>
+            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">บันทึก</button>
+        <a href="/Project/Index" class="btn btn-secondary ms-2">ยกเลิก</a>
+    </form>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
