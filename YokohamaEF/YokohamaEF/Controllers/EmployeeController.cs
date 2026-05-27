@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace YokohamaEF.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class EmployeeController : Controller
     {
         public IActionResult Index()

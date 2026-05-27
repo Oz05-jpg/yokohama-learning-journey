@@ -29,7 +29,11 @@ namespace YokohamaEF.Controllers
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, "User");
                 return RedirectToAction("Login");
+            }
+
 
             foreach (var error in result.Errors)
                 ModelState.AddModelError("", error.Description);
@@ -63,5 +67,7 @@ namespace YokohamaEF.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+        public IActionResult AccessDenied() => View();
     }
 }
