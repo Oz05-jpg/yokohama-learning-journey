@@ -33,7 +33,7 @@ namespace YokohamaEF.Controllers
         }
 
         //GET : แสดงรายชื่อพนักงานทั้งหมด
-       public IActionResult Employees()
+        public IActionResult Employees()
         {
             var employees = _db.Employees
                 .Include(e => e.DepartmentNav)

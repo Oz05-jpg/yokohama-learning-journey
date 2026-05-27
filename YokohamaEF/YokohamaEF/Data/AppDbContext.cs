@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using YokohamaEF.Models;
 
 namespace YokohamaEF.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext //เดิม : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
@@ -12,11 +13,9 @@ namespace YokohamaEF.Data
         public DbSet<Employee> Employees { get; set; }
         //migrate Db ใหม่เพื่อเก็บ Department
         public DbSet<Department> Departments { get; set; }
-
         public DbSet<Project> Projects { get; set; }
     }
 
-    // ✅ เพิ่มตรงนี้
     public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     {
         public AppDbContext CreateDbContext(string[] args)

@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using YokohamaEF.Data;
 using YokohamaEF.Models;
 namespace YokohamaEF.Controllers
 {
+    [Authorize]
     public class ProjectController : Controller
     {
         private readonly AppDbContext _db;
