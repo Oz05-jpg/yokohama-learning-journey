@@ -62,6 +62,14 @@ namespace YokohamaEF
                     if (!await roleManager.RoleExistsAsync(role))
                         await roleManager.CreateAsync(new IdentityRole(role));
                 }
+
+                /* กำหนดเป็น admin แบบ set data เอง
+                var userManager = scope.ServiceProvider
+                .GetRequiredService<UserManager<IdentityUser>>();
+
+                var adminUser = await userManager.FindByEmailAsync("admin@test.com");
+                if (adminUser != null && !await userManager.IsInRoleAsync(adminUser, "Admin"))
+                    await userManager.AddToRoleAsync(adminUser, "Admin");*/
             }
 
             app.Run();
