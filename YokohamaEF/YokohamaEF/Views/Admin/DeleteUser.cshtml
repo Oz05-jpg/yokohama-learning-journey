@@ -1,0 +1,10 @@
+﻿<h2>Delete User</h2>
+<p>ต้องการลบ <strong>@ViewBag.Email</strong> ใช่ไหม?</p>
+
+<form asp-action="DeleteUser" method="post">
+    <input type="hidden" name="userId" value="@ViewBag.UserId" />
+    <input type="hidden" name="confirm" value="true" />
+    <button type="submit">ยืนยันลบ</button>
+</form>
+
+<a asp-action="Users">← ยกเลิก</a>

@@ -1,0 +1,26 @@
+﻿@{
+    var userId = ViewBag.UserId as string;
+    var email = ViewBag.Email as string;
+    var currentRoles = ViewBag.CurrentRoles as IList<string>;
+    var allRoles = ViewBag.AllRoles as List<string>;
+}
+
+<h2>Assign Role</h2>
+<p>User: <strong>@email</strong></p>
+<p>Current Role: <strong>@(currentRoles!.Any() ? string.Join(", ", currentRoles) : "ไม่มี")</strong></p>
+
+<form asp-action="AssignRole" method="post">
+    <input type="hidden" name="userId" value="@userId" />
+
+    <label>เลือก Role:</label>
+    <select name="role">
+        @foreach (var role in allRoles!)
+        {
+            <option value="@role">@role</option>
+        }
+    </select>
+
+    <button type="submit">Save</button>
+</form>
+
+<a asp-action="Users">← Back</a>
