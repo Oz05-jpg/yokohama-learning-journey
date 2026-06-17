@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="YokohamaMaintenanceSystem.Tests/YokohamaMaintenanceSystem.Tests.csproj" Id="eaa1028d-973f-4fd4-bc73-4856b06fdd54" />
   <Project Path="YokohamaMaintenanceSystem/YokohamaMaintenanceSystem.csproj" />
 </Solution>
