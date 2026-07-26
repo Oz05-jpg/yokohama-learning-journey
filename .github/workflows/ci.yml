@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  dotnet:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - EmployeeManagement
+          - LINQ_Practice
+          - OOPBasics
+          - OOP_MockCoding
+          - OOP_Practice
+          - OTCalculator
+          - SQLConnection
+          - SQLMock_Practice
+          - TryCatch_Practice
+          - YokohamaEF
+          - YokohamaMVC
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore ${{ matrix.project }}
+
+      - name: Build
+        run: dotnet build ${{ matrix.project }} --no-restore
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+
+      - name: Syntax check
+        run: python -m py_compile PythonBasics/*.py
