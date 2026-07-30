@@ -48,8 +48,10 @@ namespace SQLMock_Practice2
 
                 conn.Open();//เปิดการเชื่อมต่อกับฐานข้อมูล
 
-                // ExecuteScalar ใช้สำหรับดึงค่าผลลัพธ์เดียวจากฐานข้อมูล เช่น จำนวนแถว หรือค่าเฉพาะที่ต้องการ
-                var reader = cmd.ExecuteReader();
+
+                var reader = cmd.ExecuteReader();//เรียกใช้ ExecuteReader เพื่อดึงข้อมูลจากฐานข้อมูลและเก็บไว้ใน SqlDataReader
+                //ถ้าใช้ ExecuteNonQuery จะไม่สามารถดึงข้อมูลออกมาได้เพราะมันใช้สำหรับคำสั่งที่ไม่คืนค่าผลลัพธ์ เช่น INSERT, UPDATE, DELETE
+                //ถ้าใช้ ExecuteScalar จะได้ผลลัพธ์เป็นค่าเดียว เช่น COUNT(*), MAX(Price) เป็นต้น ซึ่งไม่เหมาะกับการดึงข้อมูลหลายแถวและหลายคอลัมน์ 
 
                 while (reader.Read())
                 {

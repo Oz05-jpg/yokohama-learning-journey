@@ -39,7 +39,7 @@ namespace OOP_Practice
                 new CarTire()
             };
 
-            //encapsulation คือ การที่เราสามารถซ่อนข้อมูลหรือการทำงานของ class ไว้ภายใน class นั้นๆ และให้ผู้ใช้สามารถเข้าถึงได้ผ่าน method ที่เราได้กำหนดไว้ ซึ่งจะช่วยให้เราสามารถควบคุมการเข้าถึงข้อมูลและการทำงานของ class ได้ดีขึ้น
+            //loop เพื่อเรียกใช้ method Inspect ของแต่ละ object ใน list tires ซึ่งจะทำให้เราเห็นการทำงานที่แตกต่างกันของแต่ละ class ที่สืบทอดจาก class Tire
             foreach (Tire tire in tires)
             {
                 tire.Inspect();

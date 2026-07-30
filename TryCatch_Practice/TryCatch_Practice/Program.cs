@@ -17,7 +17,6 @@
             catch (DivideByZeroException)
             {
                 Console.WriteLine("ห้ามหารด้วย 0");
-
             }
             catch (Exception ex)
             {
