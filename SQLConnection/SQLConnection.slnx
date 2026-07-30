@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="SP_Practice/SP_Practice.csproj" Id="610ca5df-f7dd-4498-bea9-e7439fb7dd9b" />
   <Project Path="SQLConnection/SQLConnection.csproj" />
 </Solution>
