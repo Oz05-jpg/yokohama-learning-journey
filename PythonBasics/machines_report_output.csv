@@ -1,0 +1,11 @@
+﻿name,status
+เครื่องตัด C3,Reliable
+เครื่องบรรจุ D4,Reliable
+เครื่องส่งสายพาน A1,Reliable
+เครื่องพิมพ์ลาย F6,Reliable
+เครื่องตรวจสอบคุณภาพ G7,Reliable
+เครื่องแพ็คสินค้า I9,Reliable
+เครื่องอัดยาง B2,Unreliable
+เครื่องผสม A1,Unreliable
+เครื่องหลอมยาง E5,Unreliable
+เครื่องเป่าลม H8,Unreliable
