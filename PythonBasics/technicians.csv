@@ -1,11 +1,11 @@
-FullName,job_count
-สมชาย ใจดี,5
-อนุชา รอบคอบ,2
-สมหญิง รักงาน,2
-วิชัย เก่งกาจ,3
-มานะ อดทน,7
-สุดา ขยันมาก,1
-ประยุทธ์ ช่างซ่อม,4
-กัญญา ไฟแรง,0
-ธนากร ทำงานดี,3
-วิภา ใส่ใจ,6
+FullName,job_count,specialty
+สมชาย ใจดี,5,Electrical
+อนุชา รอบคอบ,2,Mechanical
+สมหญิง รักงาน,2,Electrical
+วิชัย เก่งกาจ,3,Mechanical
+มานะ อดทน,7,Electrical
+สุดา ขยันมาก,1,Mechanical
+ประยุทธ์ ช่างซ่อม,4,Electrical
+กัญญา ไฟแรง,0,Mechanical
+ธนากร ทำงานดี,3,Electrical
+วิภา ใส่ใจ,6,Mechanical
