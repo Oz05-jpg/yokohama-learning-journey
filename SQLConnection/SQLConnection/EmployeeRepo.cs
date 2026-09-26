@@ -10,7 +10,7 @@ namespace SQLConnection
 {
     internal class EmployeeRepo
     {
-        private string _connStr = "Server=localhost\\SQLEXPRESS01;Database=YokohamaDB;Trusted_Connection=True;Encrypt=False;";
+        private string _connStr = "Server=localhost\\SQLEXPRESS01;Database=PracticeDB;Trusted_Connection=True;Encrypt=False;";
 
         public List<Employee> GetAll()
         {

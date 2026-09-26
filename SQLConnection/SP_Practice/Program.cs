@@ -14,7 +14,7 @@ namespace SP_Practice
         static void GetMachinesByStatus(string status)
         {
             string connStr =
-                "Server=localhost\\SQLEXPRESS01;Database=YokohamaDB;Trusted_Connection=True;Encrypt=False;";
+                "Server=localhost\\SQLEXPRESS01;Database=PracticeDB;Trusted_Connection=True;Encrypt=False;";
 
             using (var conn = new SqlConnection(connStr))
             {
@@ -43,7 +43,7 @@ namespace SP_Practice
         static void AddMachine(string name, string status, string location)
         {
             string connStr =
-                "Server=localhost\\SQLEXPRESS01;Database=YokohamaDB;Trusted_Connection=True;Encrypt=False;";
+                "Server=localhost\\SQLEXPRESS01;Database=PracticeDB;Trusted_Connection=True;Encrypt=False;";
             using (var conn = new SqlConnection(connStr))
             {
                 conn.Open();

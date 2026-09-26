@@ -28,7 +28,7 @@ namespace SQLMock_Practice
         {
             var list = new List<RepairLogViewModel>();
 
-            using (var conn = new SqlConnection("server = localhost\\SQLEXPRESS01; database = YokohamaDB; Trusted_Connection = true; TrustServerCertificate = True; "))
+            using (var conn = new SqlConnection("server = localhost\\SQLEXPRESS01; database = PracticeDB; Trusted_Connection = true; TrustServerCertificate = True; "))
             using (var cmd = new SqlCommand("GetRepairLogsByDept", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;

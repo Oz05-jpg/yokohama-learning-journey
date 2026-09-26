@@ -1,0 +1,3 @@
+[submodule "MaintenanceManagementSystem/MaintenanceManagementSystem"]
+	path = MaintenanceManagementSystem/MaintenanceManagementSystem
+	url = https://github.com/Oz05-jpg/MaintenanceManagementSystem.git

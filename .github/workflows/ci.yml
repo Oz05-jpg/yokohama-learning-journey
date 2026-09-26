@@ -22,8 +22,8 @@ jobs:
           - SQLConnection
           - SQLMock_Practice
           - TryCatch_Practice
-          - YokohamaEF
-          - YokohamaMVC
+          - EFCorePractice
+          - MvcPractice
 
     steps:
       - name: Checkout code

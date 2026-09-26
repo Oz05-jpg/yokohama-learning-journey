@@ -4,7 +4,7 @@ public class OTRepo
 {
     // Connection string สำหรับเชื่อมต่อกับฐานข้อมูล SQL Server
     private string _connStr =
-    "Server=DESKTOP-K9M6MAU\\SQLEXPRESS01;Database=YokohamaDB;Trusted_Connection=True;TrustServerCertificate=True;";
+    "Server=DESKTOP-K9M6MAU\\SQLEXPRESS01;Database=PracticeDB;Trusted_Connection=True;TrustServerCertificate=True;";
     public void Save(string name, int hours, double rate, double basePay, double otPay, double totalPay)
     {
         using var conn = new SqlConnection(_connStr);

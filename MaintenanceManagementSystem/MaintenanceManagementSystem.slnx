@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="MaintenanceManagementSystem/MaintenanceManagementSystem.Tests/MaintenanceManagementSystem.Tests.csproj" Id="eaa1028d-973f-4fd4-bc73-4856b06fdd54" />
+  <Project Path="MaintenanceManagementSystem/MaintenanceManagementSystem.csproj" />
+</Solution>

@@ -38,7 +38,7 @@ namespace SQLMock_Practice2
         {
             var list = new List<EmployeeViewModel>();
             //connect to database
-            using (var conn = new SqlConnection("server = localhost\\SQLEXPRESS01; database = YokohamaDB; Trusted_Connection = true; TrustServerCertificate = True; "))
+            using (var conn = new SqlConnection("server = localhost\\SQLEXPRESS01; database = PracticeDB; Trusted_Connection = true; TrustServerCertificate = True; "))
 
             using (var cmd = conn.CreateCommand())
             {

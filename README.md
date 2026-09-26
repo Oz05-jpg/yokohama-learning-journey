@@ -1,6 +1,6 @@
-# Yokohama Learning Journey
+# Dev Learning Journey
 
-C# and .NET development learning path — targeting IT Developer role at Yokohama Tire Manufacturing (Thailand), July 2027.
+C# and .NET development learning path — building toward a junior .NET developer role in Thailand (manufacturing IT / internal systems), 2027.
 
 ## Learning Roadmap
 
@@ -30,11 +30,11 @@ C# and .NET development learning path — targeting IT Developer role at Yokoham
 
 | Project | Concepts | Status |
 |---------|---------|--------|
-| **YokohamaMVC** | ASP.NET Core MVC CRUD, Routing, Razor Views | ✅ |
-| **YokohamaEF** | Entity Framework Core, Migrations, Relationships | ✅ |
-| **[YokohamaMaintenanceSystem](./YokohamaMaintenanceSystem/)** | Full portfolio project (see below) | ✅ |
+| **MvcPractice** | ASP.NET Core MVC CRUD, Routing, Razor Views | ✅ |
+| **EFCorePractice** | Entity Framework Core, Migrations, Relationships | ✅ |
+| **[MaintenanceManagementSystem](./MaintenanceManagementSystem/)** | Full portfolio project (see below) | ✅ |
 
-## Portfolio Project — YokohamaMaintenanceSystem
+## Portfolio Project — MaintenanceManagementSystem
 
 Equipment maintenance management system for manufacturing environments.
 
@@ -42,7 +42,7 @@ Equipment maintenance management system for manufacturing environments.
 
 **Features:** Machine CRUD · Technician Assignment · Status Tracking · Report Dashboard · Search/Filter · Pagination · Repository Pattern · Unit Testing · REST API
 
-→ [View Project](./YokohamaMaintenanceSystem/)
+→ [View Project](./MaintenanceManagementSystem/)
 
 ## Skills Covered
 
@@ -58,6 +58,6 @@ GitHub             ████████████████████ 
 
 ## Target Role
 
-**IT Developer — Yokohama Tire Manufacturing (Thailand)**
+**Junior .NET Developer — manufacturing IT / internal business systems (Thailand)**
 
 Required: `C#` `.NET Core` `SQL Server` `MVC` `Visual Studio 2022` `GitHub`
